@@ -1,0 +1,33 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <label for="num"><strong>Enter the length of the Fibbanocci series</strong></label>
+        <input type="text" id="num">
+        <button type="submit" onclick="fibba()">sub</button>
+
+        <script>
+            let a=0,b=1,c,i,n;
+            function fibba(){
+           n= document.getElementById("num").value;
+           document.write("Fibbanocci Series for " +n+ " length is below<br>")
+           for(i=0;i<n;i=i+2)
+        {
+            
+            document.write(a);
+            document.write("<br>");
+            
+            document.write(b);
+            document.write("<br>");
+            c=a+b;
+            a=c;
+            b=a+b;
+
+        }
+           
+            }
+
+        </script>
+    </body>
+</html>
